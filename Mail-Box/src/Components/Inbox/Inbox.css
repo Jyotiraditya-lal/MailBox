@@ -1,0 +1,114 @@
+.inbox-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .mail-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mail-item {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+  }
+  
+  .from {
+    font-weight: bold;
+  }
+  
+  .subject {
+    color: #007bff;
+    margin-left: 10px;
+  }
+  
+  .message {
+    margin-top: 5px;
+  }
+
+  .button button {
+    
+    background-color: #ff0000; 
+    color: #fff; 
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+.blue-dot {
+    width: 8px;
+    height: 8px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .unread {
+    font-weight: bold; 
+    position: relative; 
+  }
+  
+
+  .unread .blue-dot {
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .modal-content {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; 
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+  }
+  
+  
